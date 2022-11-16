@@ -11,8 +11,8 @@ def index(request):
 
 
 def counter(request):
-    words = request.POST['words']
-    amount_of_words = len(words.split())
+    posts = [1, 2, 3, 4, 'food', 'drinks']
+    return render(request, 'counter.html', {'posts': posts})
     
 
 def register(request):
